@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "allowJs": true,
+        "esModuleInterop": true,
+        "downlevelIteration": true,
+        "resolveJsonModule": true,
+        "moduleResolution": "node",
+        "module": "CommonJS",
+        "outDir": "./dist"
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@korusbyanthm/client",
+  "version": "0.0.1",
+  "description": "Client Korus library for making requests to the api",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "korus",
+    "api",
+    "library",
+    "client",
+    "requests"
+  ],
+  "author": "Ramon de Leon from Anthm",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@korusbyanthm/ksrt": "latest",
+    "@korusbyanthm/regex": "latest",
+    "@korusbyanthm/types": "latest",
+    "axios": "^1.2.2"
+  }
+}
