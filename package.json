@@ -1,6 +1,6 @@
 {
   "name": "@korusbyanthm/client",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "description": "Client Korus library for making requests to the api",
   "main": "dist/index.js",
   "scripts": {

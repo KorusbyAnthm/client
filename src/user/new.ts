@@ -2,7 +2,11 @@ import { ISOCountryCode, Schema } from "@korusbyanthm/types";
 import { httpClient } from "..";
 import { AxiosResponse } from "axios";
 import regex from "@korusbyanthm/regex";
+import KorusError from "../KorusError";
 
+/**
+ * @throws {KorusError}
+ */
 export default async (
     username: string,
     birthday: Date,
@@ -46,6 +50,8 @@ export default async (
     if (phoneNumber) data.set("phoneNumber", phoneNumber);
 
     const req = await httpClient.post("/user/new", data);
+
+    if (req.data?.error) throw new KorusError(req.status, req.data?.error?.message, req.data?.error?.userFriendlyMessage, req.data?.error?.code, false);
 
     return {
         req,
